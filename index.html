@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <title>grid properties</title>
+        <style>
+            .parent
+            {
+            
+                display:grid;
+                width:700px;
+                height:100vh;
+                grid-template-columns: repeat(8, 1fr); 
+                grid-template-rows: repeat( 1fr);
+                /* border:1px solid black */
+
+            }
+          
+            #c1
+            {
+                width: auto;
+                background-color:orangered;
+                grid-column-start: 1;
+                grid-column-end: 10;
+                grid-row-start: 1;
+                grid-row-end:1;
+                border:1px solid black
+            }
+            #c2
+            {
+                /* height: 400px; */
+                width: 100px;
+                background-color:aqua;
+                grid-column-start: 1;
+                grid-column-end: 1;
+                grid-row-start: 2;
+                grid-row-end:7;
+                border:1px solid black
+            }
+            #c3
+            {
+                /* height: 150px; */
+                width: 100px;
+                background-color:blueviolet;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end:4;
+                border:1px solid black
+            }
+            #c4
+            {
+                 /* height: 150px; */
+                width: 100px;
+                background-color:deeppink;
+                grid-column-start: 3;
+                grid-column-end: 4;
+                grid-row-start: 2;
+                grid-row-end:4;
+                border:1px solid black
+            
+            }
+            #c5
+            {
+                /* height: auto; */
+                background-color:chartreuse;
+                grid-column-start: 2;
+                grid-column-end: 4;
+                grid-row-start: 4;
+                grid-row-end:7;
+                border:1px solid black
+            }
+            #c6
+            {
+                height: ;
+                width: 350;
+                background-color:gold;
+                grid-column-start: 4;
+                grid-column-end: 6;
+                grid-row-start: 2;
+                grid-row-end:7;
+                border:1px solid black
+            }
+            #c7
+            {
+                width: 250;
+                background-color:grey;
+                grid-column-start: 6;
+                grid-column-end:8;
+                grid-row-start: 2;
+                grid-row-end:4;
+                border:1px solid black
+            }
+            #c8
+            {
+                background-color:darkred;
+                grid-column-start: 6;
+                grid-column-end:7;
+                grid-row-start: 4;
+                grid-row-end:7;
+                border:1px solid black
+            }
+
+            #c9
+            {
+                background-color:violet;
+                grid-column-start: 7;
+                grid-column-end: 8;
+                grid-row-start: 4;
+                grid-row-end:7;
+                border:1px solid black
+            }
+            #c10
+            {
+                background-color:powderblue;
+                grid-column-start: 1;
+                grid-column-end: 8;
+                grid-row-start: 7;
+                grid-row-end:8;
+                border:1px solid black
+    
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <div id="c1" class="child">Navbar</div>
+            <div id="c2" class="child">aside</div>
+            <div id="c3" class="child">some1</div>
+            <div id="c4" class="child">some2</div>
+            <div id="c5" class="child">some3</div>
+            <div id="c6" class="child">header</div>
+            <div id="c7" class="child">article</div>
+            <div id="c8" class="child">some4</div>
+            <div id="c9" class="child">some5</div>
+            <div id="c10" class="child">Footer</div>
+
+
+        </div>
+    </body>
+</html>
